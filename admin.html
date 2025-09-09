@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Requests Admin</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 20px; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+            font-size: 12px; 
+        }
+        th { 
+            background-color: #f2f2f2; 
+            font-weight: bold; 
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) { 
+            background-color: #f9f9f9; 
+        }
+        .header { 
+            margin-bottom: 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .download-btn { 
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover { 
+            background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+            transform: translateY(-2px);
+        }
+        .clear-btn {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+        .clear-btn:hover {
+            background: linear-gradient(135deg, #c53030 0%, #9c2e2e 100%);
+            transform: translateY(-2px);
+        }
+        .stats { 
+            color: #666; 
+            margin: 0;
+        }
+        .no-data { 
+            text-align: center; 
+            padding: 50px; 
+            color: #666; 
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .back-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Medical Test Requests</h1>
+                <p class="stats" id="total-count">Loading requests...</p>
+            </div>
+            <div class="button-group">
+                <a href="/" class="back-link">← Back to Home</a>
+                <button id="download-btn" class="download-btn">📥 Download Excel File</button>
+                <button id="clear-btn" class="clear-btn">🗑️ Clear All Data</button>
+            </div>
+        </div>
+        
+        <div id="data-container">
+            <!-- Data will be loaded here -->
+        </div>
+    </div>
+
+    <!-- SheetJS library for Excel generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadRequestsData();
+            
+            // Download button functionality
+            document.getElementById('download-btn').addEventListener('click', downloadExcel);
+            
+            // Clear data button functionality
+            document.getElementById('clear-btn').addEventListener('click', function() {
+                if (confirm('Are you sure you want to clear all request data? This cannot be undone.')) {
+                    localStorage.removeItem('testRequests');
+                    loadRequestsData();
+                }
+            });
+        });
+        
+        function loadRequestsData() {
+            const requests = JSON.parse(localStorage.getItem('testRequests') || '[]');
+            const totalCount = document.getElementById('total-count');
+            const dataContainer = document.getElementById('data-container');
+            
+            totalCount.textContent = `Total Requests: ${requests.length}`;
+            
+            if (requests.length === 0) {
+                dataContainer.innerHTML = `
+                    <div class="no-data">
+                        <h3>No requests found yet.</h3>
+                        <p>Submit some test requests to see them here.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Create table
+            let tableHTML = `
+                <table>
+                    <tr>
+                        <th>Submission Date</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Test Name</th>
+                        <th>Test Price</th>
+                        <th>Test Duration</th>
+                        <th>Case Study</th>
+                        <th>Category</th>
+                        <th>Preferred Date</th>
+                        <th>Preferred Time</th>
+                        <th>Insurance</th>
+                        <th>Symptoms</th>
+                        <th>Medical History</th>
+                        <th>Emergency Contact</th>
+                        <th>Emergency Phone</th>
+                        <th>Consent</th>
+                        <th>Privacy Agreement</th>
+                    </tr>
+            `;
+            
+            requests.forEach(request => {
+                const date = new Date(request.submission_date).toLocaleDateString();
+                tableHTML += `
+                    <tr>
+                        <td>${date}</td>
+                        <td>${request.full_name || ''}</td>
+                        <td>${request.email || ''}</td>
+                        <td>${request.phone || ''}</td>
+                        <td>${request.age || ''}</td>
+                        <td>${request.gender || ''}</td>
+                        <td>${request.test_name || ''}</td>
+                        <td>${request.test_price || ''}</td>
+                        <td>${request.test_duration || ''}</td>
+                        <td>${request.case_study_title || ''}</td>
+                        <td>${request.case_study_category || ''}</td>
+                        <td>${request.preferred_date || ''}</td>
+                        <td>${request.preferred_time || ''}</td>
+                        <td>${request.insurance || ''}</td>
+                        <td>${request.symptoms || ''}</td>
+                        <td>${request.medical_history || ''}</td>
+                        <td>${request.emergency_contact || ''}</td>
+                        <td>${request.emergency_phone || ''}</td>
+                        <td>${request.consent || ''}</td>
+                        <td>${request.privacy || ''}</td>
+                    </tr>
+                `;
+            });
+            
+            tableHTML += '</table>';
+            dataContainer.innerHTML = tableHTML;
+        }
+        
+        function downloadExcel() {
+            const requests = JSON.parse(localStorage.getItem('testRequests') || '[]');
+            
+            if (requests.length === 0) {
+                alert('No data to download. Submit some requests first.');
+                return;
+            }
+            
+            // Prepare data for Excel
+            const headers = [
+                'Submission Date', 'Full Name', 'Email', 'Phone', 'Age', 'Gender',
+                'Test Name', 'Test Price', 'Test Duration', 'Case Study Title', 
+                'Case Study Category', 'Preferred Date', 'Preferred Time', 
+                'Insurance Provider', 'Symptoms', 'Medical History', 
+                'Emergency Contact', 'Emergency Phone', 'Consent', 'Privacy Agreement'
+            ];
+            
+            const excelData = [headers];
+            
+            requests.forEach(request => {
+                const row = [
+                    new Date(request.submission_date).toLocaleDateString(),
+                    request.full_name || '',
+                    request.email || '',
+                    request.phone || '',
+                    request.age || '',
+                    request.gender || '',
+                    request.test_name || '',
+                    request.test_price || '',
+                    request.test_duration || '',
+                    request.case_study_title || '',
+                    request.case_study_category || '',
+                    request.preferred_date || '',
+                    request.preferred_time || '',
+                    request.insurance || '',
+                    request.symptoms || '',
+                    request.medical_history || '',
+                    request.emergency_contact || '',
+                    request.emergency_phone || '',
+                    request.consent || '',
+                    request.privacy || ''
+                ];
+                excelData.push(row);
+            });
+            
+            // Create workbook and worksheet
+            const wb = XLSX.utils.book_new();
+            const ws = XLSX.utils.aoa_to_sheet(excelData);
+            
+            // Add worksheet to workbook
+            XLSX.utils.book_append_sheet(wb, ws, "Test Requests");
+            
+            // Generate filename with current date
+            const currentDate = new Date().toISOString().split('T')[0];
+            const filename = `test_requests_${currentDate}.xlsx`;
+            
+            // Download the file
+            XLSX.writeFile(wb, filename);
+        }
+    </script>
+</body>
+</html>

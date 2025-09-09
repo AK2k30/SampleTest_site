@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <button class="nav-btn back-btn" onclick="window.location.href='pdf-viewer.html'">←</button>
+        <button class="nav-btn home-btn" onclick="window.location.href='index.html'">
+            <svg class="home-icon" viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="container">
+        <header class="request-form-header">
+            <h1>Request Test</h1>
+            <p id="test-info">Fill out the form below to request your medical test</p>
+        </header>
+        
+        <main>
+            <div class="form-container">
+                <form id="request-form" action="/submit-request" method="POST">
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="full_name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="1" max="120">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">-- Please select --</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date" id="preferred-date" name="preferred_date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Time</label>
+                        <select id="preferred-time" name="preferred_time">
+                            <option value="">-- Please select --</option>
+                            <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                            <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                            <option value="evening">Evening (5:00 PM - 8:00 PM)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="insurance">Insurance Provider</label>
+                        <input type="text" id="insurance" name="insurance" placeholder="e.g., Blue Cross, Aetna, Medicare">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="symptoms">Current Symptoms or Concerns</label>
+                        <textarea id="symptoms" name="symptoms" rows="4" placeholder="Please describe any symptoms or reasons for requesting this test"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medical-history">Relevant Medical History</label>
+                        <textarea id="medical-history" name="medical_history" rows="3" placeholder="Any relevant medical conditions, medications, or previous tests"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergency-contact">Emergency Contact Name</label>
+                        <input type="text" id="emergency-contact" name="emergency_contact">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergency-phone">Emergency Contact Phone</label>
+                        <input type="tel" id="emergency-phone" name="emergency_phone">
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I consent to the medical test and understand the procedures involved *</label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to the privacy policy and data handling practices *</label>
+                    </div>
+                    
+                    <button type="submit" class="continue-btn">Submit Test Request</button>
+                </form>
+                
+                <div id="success-message" class="success-message" style="display: none;">
+                    <h3>Request Submitted Successfully!</h3>
+                    <p>Thank you for your test request. We will contact you within 24-48 hours to schedule your appointment.</p>
+                    <button id="submit-another-btn" class="continue-btn">Submit Another Request</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- SheetJS library for Excel generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="request-form.js"></script>
+</body>
+</html>
