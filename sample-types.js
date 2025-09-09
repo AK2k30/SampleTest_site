@@ -3,43 +3,43 @@ const sampleTypesData = [
     {
         id: 'blood',
         name: 'Blood',
-        icon: '🩸',
+        iconPath: 'attached_assets/Blood svg.svg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
     },
     {
         id: 'sterile-fluids',
         name: 'Sterile body fluids/aspirates',
-        icon: '🧪',
+        iconPath: 'attached_assets/Sterile Body Fluids, Aspirates.svg',
         description: 'Comprehensive testing of sterile body fluids including cerebrospinal fluid, pleural fluid, peritoneal fluid, and synovial fluid. These samples require specialized handling and processing techniques to maintain sterility and provide accurate diagnostic results.'
     },
     {
         id: 'urine',
         name: 'Urine',
-        icon: '🥤',
+        iconPath: 'attached_assets/Urine.svg',
         description: 'Urinalysis and urine culture testing for detecting urinary tract infections, kidney disorders, diabetes, and other metabolic conditions. Our comprehensive urine testing includes microscopic examination and chemical analysis.'
     },
     {
         id: 'bal',
         name: 'Bronchoalveolar Lavage (BAL)',
-        icon: '🫁',
+        iconPath: 'attached_assets/BAL.svg',
         description: 'Specialized respiratory testing through bronchoalveolar lavage samples to diagnose lung infections, inflammatory conditions, and malignancies. Essential for evaluating lower respiratory tract disorders.'
     },
     {
         id: 'csf',
         name: 'Cerebrospinal Fluid (CSF)',
-        icon: '🧠',
+        iconPath: 'attached_assets/CSF.svg',
         description: 'Critical neurological testing of cerebrospinal fluid to diagnose meningitis, encephalitis, multiple sclerosis, and other central nervous system disorders. Requires immediate processing for accurate results.'
     },
     {
         id: 'swab',
         name: 'Oropharyngeal / Nasopharyngeal Swab in Viral Transport Medium',
-        icon: '🦠',
+        iconPath: 'attached_assets/Swab.svg',
         description: 'Respiratory virus testing including COVID-19, influenza, RSV, and other viral pathogens. Proper collection and transport in viral transport medium ensures optimal detection sensitivity.'
     },
     {
         id: 'aspirate',
         name: 'Endotracheal Aspirate',
-        icon: '🫁',
+        iconPath: 'attached_assets/ET.svg',
         description: 'Lower respiratory tract sampling for critically ill patients, particularly useful in intensive care settings for diagnosing ventilator-associated pneumonia and other respiratory infections.'
     }
 ];
