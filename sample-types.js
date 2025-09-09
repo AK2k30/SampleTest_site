@@ -44,7 +44,22 @@ const sampleTypesData = [
     }
 ];
 
-document.addEventListener('DOMContentLoaded', function() {
+// Load SVG content for each sample type
+async function loadSVGContent() {
+    for (let sampleType of sampleTypesData) {
+        try {
+            const response = await fetch(sampleType.iconPath);
+            const svgContent = await response.text();
+            sampleType.icon = svgContent;
+        } catch (error) {
+            console.error(`Failed to load SVG for ${sampleType.name}:`, error);
+            sampleType.icon = `<img src="${sampleType.iconPath}" alt="${sampleType.name}" width="40" height="40">`;
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+    await loadSVGContent();
     displaySampleTypes();
 });
 
