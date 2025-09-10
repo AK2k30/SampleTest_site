@@ -4,43 +4,49 @@ const sampleTypesData = [
         id: 'blood',
         name: 'Blood',
         icon: '🩸',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
+        minimumVolume: '2 - 4 ml',
+        collectionProcedure: 'Whole blood in sterile EDTA vacutainers',
+        description: 'Minimum Volume Required: 2 - 4 ml<br>Collection Procedure: Whole blood in sterile EDTA vacutainers'
     },
     {
         id: 'sterile-fluids',
         name: 'Sterile body fluids/aspirates',
         icon: '🧪',
-        description: 'Comprehensive testing of sterile body fluids including cerebrospinal fluid, pleural fluid, peritoneal fluid, and synovial fluid. These samples require specialized handling and processing techniques to maintain sterility and provide accurate diagnostic results.'
-    },
-    {
-        id: 'urine',
-        name: 'Urine',
-        icon: '🥤',
-        description: 'Urinalysis and urine culture testing for detecting urinary tract infections, kidney disorders, diabetes, and other metabolic conditions. Our comprehensive urine testing includes microscopic examination and chemical analysis.'
-    },
-    {
-        id: 'bal',
-        name: 'Bronchoalveolar Lavage (BAL)',
-        icon: '🫁',
-        description: 'Specialized respiratory testing through bronchoalveolar lavage samples to diagnose lung infections, inflammatory conditions, and malignancies. Essential for evaluating lower respiratory tract disorders.'
+        minimumVolume: '2 - 4 ml',
+        collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
+        description: 'Minimum Volume Required: 2 - 4 ml<br>Collection Procedure: Collected with strict aseptic techniques in a sterile container'
     },
     {
         id: 'csf',
         name: 'Cerebrospinal Fluid (CSF)',
         icon: '🧠',
-        description: 'Critical neurological testing of cerebrospinal fluid to diagnose meningitis, encephalitis, multiple sclerosis, and other central nervous system disorders. Requires immediate processing for accurate results.'
+        minimumVolume: '1 ml',
+        collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
+        description: 'Minimum Volume Required: 1 ml<br>Collection Procedure: Collected with strict aseptic techniques in a sterile container'
+    },
+    {
+        id: 'urine',
+        name: 'Urine',
+        icon: '🥤',
+        minimumVolume: '2 ml',
+        collectionProcedure: 'Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter',
+        description: 'Minimum Volume Required: 2 ml<br>Collection Procedure: Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter'
+    },
+    {
+        id: 'bal-endotracheal',
+        name: 'Bronchoalveolar Lavage (BAL)/ Endotracheal',
+        icon: '🫁',
+        minimumVolume: '4 ml',
+        collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
+        description: 'Minimum Volume Required: 4 ml<br>Collection Procedure: Collected with strict aseptic techniques in a sterile container'
     },
     {
         id: 'swab',
-        name: 'Oropharyngeal / Nasopharyngeal Swab in Viral Transport Medium',
+        name: 'Oropharyngeal / Nasopharyngeal Swab',
         icon: '🦠',
-        description: 'Respiratory virus testing including COVID-19, influenza, RSV, and other viral pathogens. Proper collection and transport in viral transport medium ensures optimal detection sensitivity.'
-    },
-    {
-        id: 'aspirate',
-        name: 'Endotracheal Aspirate',
-        icon: '🫁',
-        description: 'Lower respiratory tract sampling for critically ill patients, particularly useful in intensive care settings for diagnosing ventilator-associated pneumonia and other respiratory infections.'
+        minimumVolume: '',
+        collectionProcedure: 'Follow Manufacturer Recommendations',
+        description: 'Collection Procedure: Follow Manufacturer Recommendations'
     }
 ];
 
