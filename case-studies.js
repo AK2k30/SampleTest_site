@@ -7,7 +7,7 @@ const caseStudyData = {
             description: "Critical blood culture analysis revealed multi-drug resistant Staphylococcus aureus in a 67-year-old patient with fever and confusion",
             category: "Emergency Medicine",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/NEONATAL_SEPTICAEMIA_cyuyf6.jpg"
         },
         {
             id: 2,
@@ -15,7 +15,7 @@ const caseStudyData = {
             description: "Complete blood count revealed severe iron-deficiency anemia in a 45-year-old woman with chronic fatigue and pale complexion",
             category: "Hematology",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516765/DR.SUJEESH_k6dxru.jpg"
         },
         {
             id: 3,
@@ -23,7 +23,7 @@ const caseStudyData = {
             description: "Abnormal white blood cell count led to bone marrow biopsy confirming acute lymphoblastic leukemia in pediatric patient",
             category: "Oncology",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg"
         },
         {
             id: 4,
@@ -31,7 +31,7 @@ const caseStudyData = {
             description: "HbA1c blood test showed excellent glucose control in type 2 diabetic patient following lifestyle modifications",
             category: "Endocrinology",
             severity: "Normal",
-            backgroundImage: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516764/DR_JAYESH_N_DESAI_yfecky.jpg"
         },
         {
             id: 5,
@@ -39,7 +39,7 @@ const caseStudyData = {
             description: "Elevated troponin levels confirmed myocardial infarction in 58-year-old male with chest pain and shortness of breath",
             category: "Cardiology",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg"
         }
     ],
     'sterile-fluids': [
@@ -49,7 +49,7 @@ const caseStudyData = {
             description: "Peritoneal fluid analysis revealed bacterial peritonitis in dialysis patient with abdominal pain and fever",
             category: "Nephrology",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/SCRUB_TYPHUS_kmjde9.jpg"
         },
         {
             id: 2,
@@ -57,7 +57,7 @@ const caseStudyData = {
             description: "Thoracentesis fluid examination identified malignant cells indicating metastatic lung cancer in 72-year-old smoker",
             category: "Pulmonology",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516764/DR.PRADEEP_bphj7b.jpg"
         },
         {
             id: 3,
@@ -65,7 +65,7 @@ const caseStudyData = {
             description: "Joint fluid analysis confirmed septic arthritis with Streptococcus pneumoniae in immunocompromised patient",
             category: "Rheumatology",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/MYCETOMA_b2huxk.jpg"
         },
         {
             id: 4,
@@ -73,7 +73,7 @@ const caseStudyData = {
             description: "Abdominal fluid analysis ruled out spontaneous bacterial peritonitis in cirrhotic patient with ascites",
             category: "Gastroenterology",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516762/DR.MAHAESH_orydme.jpg"
         },
         {
             id: 5,
@@ -81,7 +81,7 @@ const caseStudyData = {
             description: "Pericardiocentesis revealed inflammatory pericarditis with no evidence of malignancy in cardiac tamponade case",
             category: "Cardiology",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516763/DR_AMOL-_Roseomonas_mucosa_p4pxxe.jpg"
         }
     ],
     urine: [
@@ -91,7 +91,7 @@ const caseStudyData = {
             description: "24-hour urine collection revealed elevated calcium oxalate levels, leading to dietary modifications and successful stone prevention",
             category: "Urology",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516762/DR.KIRAN_RAJAGOPAL_xggw12.jpg"
         },
         {
             id: 2,
@@ -99,7 +99,7 @@ const caseStudyData = {
             description: "Urine culture identified E. coli with antibiotic resistance, requiring targeted therapy in 82-year-old woman",
             category: "Geriatrics",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516761/DR_ouohcu.png"
         },
         {
             id: 3,
@@ -107,7 +107,7 @@ const caseStudyData = {
             description: "Persistent protein in urine led to kidney biopsy confirming focal segmental glomerulosclerosis in young adult",
             category: "Nephrology",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516761/DR.GANESH_ovicd5.jpg"
         },
         {
             id: 4,
@@ -115,7 +115,7 @@ const caseStudyData = {
             description: "Routine urinalysis detected preeclampsia markers, enabling early intervention and successful pregnancy outcome",
             category: "Obstetrics",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/NEONATAL_SEPTICAEMIA_cyuyf6.jpg"
         },
         {
             id: 5,
@@ -123,7 +123,7 @@ const caseStudyData = {
             description: "Workplace accident investigation revealed presence of controlled substances, leading to appropriate treatment referral",
             category: "Occupational Health",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/SCRUB_TYPHUS_kmjde9.jpg"
         }
     ],
     bal: [
@@ -133,7 +133,7 @@ const caseStudyData = {
             description: "BAL fluid analysis confirmed PCP infection in HIV-positive patient with respiratory failure and hypoxemia",
             category: "Infectious Disease",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg"
         },
         {
             id: 2,
@@ -175,7 +175,7 @@ const caseStudyData = {
             description: "CSF analysis revealed elevated white cells and low glucose, confirming Streptococcus pneumoniae meningitis in pediatric patient",
             category: "Emergency Neurology",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg"
         },
         {
             id: 2,
@@ -217,7 +217,7 @@ const caseStudyData = {
             description: "Nasopharyngeal swab PCR testing identified SARS-CoV-2 variants during workplace outbreak, enabling contact tracing",
             category: "Public Health",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/MYCETOMA_b2huxk.jpg"
         },
         {
             id: 2,
@@ -259,7 +259,7 @@ const caseStudyData = {
             description: "Serial endotracheal aspirates showed successful clearance of Acinetobacter baumannii following targeted antibiotic therapy",
             category: "Critical Care",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516765/DR.SUJEESH_k6dxru.jpg"
         },
         {
             id: 2,

@@ -6,7 +6,7 @@ const sampleTypesData = [
         icon: '🩸',
         minimumVolume: '2 - 4 ml',
         collectionProcedure: 'Whole blood in sterile EDTA vacutainers',
-        description: 'Minimum Volume Required: 2 - 4 ml<br>Collection Procedure: Whole blood in sterile EDTA vacutainers'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 - 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Whole blood in sterile EDTA vacutainers'
     },
     {
         id: 'sterile-fluids',
@@ -14,7 +14,7 @@ const sampleTypesData = [
         icon: '🧪',
         minimumVolume: '2 - 4 ml',
         collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
-        description: 'Minimum Volume Required: 2 - 4 ml<br>Collection Procedure: Collected with strict aseptic techniques in a sterile container'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 - 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
     },
     {
         id: 'csf',
@@ -22,7 +22,7 @@ const sampleTypesData = [
         icon: '🧠',
         minimumVolume: '1 ml',
         collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
-        description: 'Minimum Volume Required: 1 ml<br>Collection Procedure: Collected with strict aseptic techniques in a sterile container'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 1 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
     },
     {
         id: 'urine',
@@ -30,7 +30,7 @@ const sampleTypesData = [
         icon: '🥤',
         minimumVolume: '2 ml',
         collectionProcedure: 'Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter',
-        description: 'Minimum Volume Required: 2 ml<br>Collection Procedure: Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter'
     },
     {
         id: 'bal-endotracheal',
@@ -38,7 +38,7 @@ const sampleTypesData = [
         icon: '🫁',
         minimumVolume: '4 ml',
         collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
-        description: 'Minimum Volume Required: 4 ml<br>Collection Procedure: Collected with strict aseptic techniques in a sterile container'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
     },
     {
         id: 'swab',
@@ -46,7 +46,7 @@ const sampleTypesData = [
         icon: '🦠',
         minimumVolume: '',
         collectionProcedure: 'Follow Manufacturer Recommendations',
-        description: 'Collection Procedure: Follow Manufacturer Recommendations'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Follow Manufacturer Recommendations'
     }
 ];
 
