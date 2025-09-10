@@ -815,7 +815,8 @@ label {
 
 .case-study-card-new {
     border-radius: 20px;
-    padding: 0;
+    padding: 8px;
+    background: white;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -831,23 +832,25 @@ label {
 
 .case-study-background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 12px;
 }
 
 .case-study-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(33, 150, 243, 0.8) 0%, rgba(25, 118, 210, 0.9) 100%);
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
     z-index: 1;
+    border-radius: 12px;
 }
 
 .case-study-content-wrapper {
@@ -862,16 +865,17 @@ label {
 }
 
 .case-study-number {
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 6px 12px;
     border-radius: 15px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 11px;
     align-self: flex-start;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
 }
 
 .case-study-title {
@@ -880,13 +884,15 @@ label {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .case-study-description {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.5;
     margin: 0;
     font-size: 14px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .case-studies-grid .case-study-card-new:nth-child(5) {
