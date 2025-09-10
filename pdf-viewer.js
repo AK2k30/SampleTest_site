@@ -32,8 +32,8 @@ function loadPdfDocument(caseStudy) {
     const pdfIframe = document.getElementById('pdf-iframe');
     const pdfDownloadLink = document.getElementById('pdf-download-link');
     
-    // Set the PDF source to the actual PDF file
-    const pdfPath = 'attached_assets/BE_CSE_AIML__CSE_DS__AI_DS_AI_ML_DE (1)_1757313571028.pdf';
+    // Set the PDF source to the Cloudinary PDF file
+    const pdfPath = 'https://res.cloudinary.com/dirdm86ij/image/upload/v1757518316/BE_CSE_AIML__CSE_DS__AI_DS_AI_ML_DE_1_njs08v.pdf';
     
     if (pdfIframe) {
         pdfIframe.src = pdfPath;

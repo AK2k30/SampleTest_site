@@ -141,7 +141,7 @@ const caseStudyData = {
             description: "BAL showed characteristic milky appearance and PAS-positive material confirming rare lung disorder diagnosis",
             category: "Pulmonology",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757519716/DR.SHAMIM_AKHTAR_1_ybfd7j.jpg"
         },
         {
             id: 3,
@@ -149,7 +149,7 @@ const caseStudyData = {
             description: "BAL cytology revealed adenocarcinoma cells, providing crucial staging information for treatment planning",
             category: "Oncology",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757519716/DR._SUMEET_1_ociaqv.jpg"
         },
         {
             id: 4,

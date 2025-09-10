@@ -746,6 +746,12 @@ label {
     border-radius: 50%;
 }
 
+.sample-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 .sample-name {
     flex: 1;
     margin: 0;
@@ -848,7 +854,7 @@ label {
     left: 8px;
     width: calc(100% - 16px);
     height: calc(100% - 16px);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.75) 100%);
     z-index: 1;
     border-radius: 12px;
 }
@@ -1182,6 +1188,7 @@ label {
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
         padding: 0 10px;
+        margin-top: 40px;
     }
     
     .case-study-card-new {
