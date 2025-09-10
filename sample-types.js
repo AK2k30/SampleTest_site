@@ -43,7 +43,7 @@ const sampleTypesData = [
     {
         id: 'swab',
         name: 'Oropharyngeal / Nasopharyngeal Swab in Viral Transport Medium',
-        icon: 'icons/Swab.svg',
+        icon: 'icons/ET.svg',
         minimumVolume: '',
         collectionProcedure: 'Follow Manufacturer Recommendations',
         description: '<span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Follow Manufacturer Recommendations'
@@ -51,7 +51,7 @@ const sampleTypesData = [
     {
         id: 'endotracheal',
         name: 'Endotracheal Aspirate',
-        icon: 'icons/ET.svg',
+        icon: 'icons/Swab.svg',
         minimumVolume: '2 ml',
         collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
         description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
