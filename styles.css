@@ -746,22 +746,6 @@ label {
     border-radius: 50%;
 }
 
-/* SVG scaling for sample icons */
-.sample-icon svg {
-    width: 24px;
-    height: 24px;
-    max-width: 24px;
-    max-height: 24px;
-    fill: #2E7D32;
-}
-
-.sample-icon img {
-    width: 24px;
-    height: 24px;
-    max-width: 24px;
-    max-height: 24px;
-}
-
 .sample-name {
     flex: 1;
     margin: 0;

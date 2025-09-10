@@ -3,63 +3,48 @@ const sampleTypesData = [
     {
         id: 'blood',
         name: 'Blood',
-        iconPath: 'attached_assets/Blood svg.svg',
+        icon: '🩸',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
     },
     {
         id: 'sterile-fluids',
         name: 'Sterile body fluids/aspirates',
-        iconPath: 'attached_assets/Sterile Body Fluids, Aspirates.svg',
+        icon: '🧪',
         description: 'Comprehensive testing of sterile body fluids including cerebrospinal fluid, pleural fluid, peritoneal fluid, and synovial fluid. These samples require specialized handling and processing techniques to maintain sterility and provide accurate diagnostic results.'
     },
     {
         id: 'urine',
         name: 'Urine',
-        iconPath: 'attached_assets/Urine.svg',
+        icon: '🥤',
         description: 'Urinalysis and urine culture testing for detecting urinary tract infections, kidney disorders, diabetes, and other metabolic conditions. Our comprehensive urine testing includes microscopic examination and chemical analysis.'
     },
     {
         id: 'bal',
         name: 'Bronchoalveolar Lavage (BAL)',
-        iconPath: 'attached_assets/BAL.svg',
+        icon: '🫁',
         description: 'Specialized respiratory testing through bronchoalveolar lavage samples to diagnose lung infections, inflammatory conditions, and malignancies. Essential for evaluating lower respiratory tract disorders.'
     },
     {
         id: 'csf',
         name: 'Cerebrospinal Fluid (CSF)',
-        iconPath: 'attached_assets/CSF.svg',
+        icon: '🧠',
         description: 'Critical neurological testing of cerebrospinal fluid to diagnose meningitis, encephalitis, multiple sclerosis, and other central nervous system disorders. Requires immediate processing for accurate results.'
     },
     {
         id: 'swab',
         name: 'Oropharyngeal / Nasopharyngeal Swab in Viral Transport Medium',
-        iconPath: 'attached_assets/Swab.svg',
+        icon: '🦠',
         description: 'Respiratory virus testing including COVID-19, influenza, RSV, and other viral pathogens. Proper collection and transport in viral transport medium ensures optimal detection sensitivity.'
     },
     {
         id: 'aspirate',
         name: 'Endotracheal Aspirate',
-        iconPath: 'attached_assets/ET.svg',
+        icon: '🫁',
         description: 'Lower respiratory tract sampling for critically ill patients, particularly useful in intensive care settings for diagnosing ventilator-associated pneumonia and other respiratory infections.'
     }
 ];
 
-// Load SVG content for each sample type
-async function loadSVGContent() {
-    for (let sampleType of sampleTypesData) {
-        try {
-            const response = await fetch(sampleType.iconPath);
-            const svgContent = await response.text();
-            sampleType.icon = svgContent;
-        } catch (error) {
-            console.error(`Failed to load SVG for ${sampleType.name}:`, error);
-            sampleType.icon = `<img src="${sampleType.iconPath}" alt="${sampleType.name}" width="40" height="40">`;
-        }
-    }
-}
-
-document.addEventListener('DOMContentLoaded', async function() {
-    await loadSVGContent();
+document.addEventListener('DOMContentLoaded', function() {
     displaySampleTypes();
 });
 
