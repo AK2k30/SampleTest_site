@@ -62,8 +62,8 @@ function displaySampleTypes() {
         const sampleCard = document.createElement('div');
         sampleCard.className = 'sample-type-card';
         
-        // First item (Blood) should be expanded by default
-        const isExpanded = index === 0;
+        // No items should be expanded by default
+        const isExpanded = false;
         
         sampleCard.innerHTML = `
             <div class="sample-header ${isExpanded ? 'expanded' : ''}" data-sample-id="${sampleType.id}">
