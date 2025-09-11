@@ -222,7 +222,7 @@ const caseStudyData = {
             id: 1,
             title: "Crenalium Epipsammum, Klebsiella pneumoniae (XDR)",
             description: "A real-world case study of identifying a rare sand-dwelling pathogen using infexn® NGS",
-            category: "Public Health",
+            category: "icon Health",
             severity: "High",
             backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757597578/WhatsApp_Image_2025-09-11_at_19.01.56_cc48ec3f_h3x5x1.jpg",
             pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757582148/INFEXN_-_CASE_STUDY_-_CRENALIUM_EPIPSAMMUM_compressed_pxb1yx.pdf"
