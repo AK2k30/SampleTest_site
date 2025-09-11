@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const selectedCaseStudy = JSON.parse(localStorage.getItem('selectedCaseStudy'));
-    const testTitle = document.getElementById('test-title');
     const pdfTestName = document.getElementById('pdf-test-name');
-    const pdfContent = document.getElementById('pdf-content');
-    const backToTestsBtn = document.getElementById('back-to-tests-btn');
-    const requestTestBtn = document.getElementById('request-test-btn');
     
     // If no case study selected, redirect back
     if (!selectedCaseStudy) {
@@ -12,10 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
     
-    // Display case study information
-    if (testTitle) {
-        testTitle.textContent = `${selectedCaseStudy.title} - Detailed Information`;
-    }
+    // Display case study information in PDF header
     if (pdfTestName) {
         pdfTestName.textContent = selectedCaseStudy.title;
     }
@@ -32,8 +25,8 @@ function loadPdfDocument(caseStudy) {
     const pdfIframe = document.getElementById('pdf-iframe');
     const pdfDownloadLink = document.getElementById('pdf-download-link');
     
-    // Set the PDF source to the Cloudinary PDF file
-    const pdfPath = 'https://res.cloudinary.com/dirdm86ij/image/upload/v1757518316/BE_CSE_AIML__CSE_DS__AI_DS_AI_ML_DE_1_njs08v.pdf';
+    // Use the PDF URL from the case study data
+    const pdfPath = caseStudy.pdfUrl || 'https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf';
     
     if (pdfIframe) {
         pdfIframe.src = pdfPath;

@@ -3,7 +3,7 @@ const sampleTypesData = [
     {
         id: 'blood',
         name: 'Blood',
-        icon: 'icons/Blood svg.svg',
+        icon: '🩸',
         minimumVolume: '2 - 4 ml',
         collectionProcedure: 'Whole blood in sterile EDTA vacutainers',
         description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 - 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Whole blood in sterile EDTA vacutainers'
@@ -11,50 +11,42 @@ const sampleTypesData = [
     {
         id: 'sterile-fluids',
         name: 'Sterile body fluids/aspirates',
-        icon: 'icons/Sterile Body Fluids, Aspirates.svg',
+        icon: '🧪',
         minimumVolume: '2 - 4 ml',
         collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
         description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 - 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
     },
     {
-        id: 'urine',
-        name: 'Urine',
-        icon: 'icons/Urine.svg',
-        minimumVolume: '2 ml',
-        collectionProcedure: 'Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter',
-        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter'
-    },
-    {
-        id: 'bal',
-        name: 'Bronchoalveolar Lavage (BAL)',
-        icon: 'icons/BAL.svg',
-        minimumVolume: '4 ml',
-        collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
-        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
-    },
-    {
         id: 'csf',
         name: 'Cerebrospinal Fluid (CSF)',
-        icon: 'icons/CSF.svg',
+        icon: '🧠',
         minimumVolume: '1 ml',
         collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
         description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 1 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
     },
     {
+        id: 'urine',
+        name: 'Urine',
+        icon: '🥤',
+        minimumVolume: '2 ml',
+        collectionProcedure: 'Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter',
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Supra pubic tap in-out catheter technique of collection Aseptic draw from anwering catheter Sample collected altinertive of catheter and/or change of catheter'
+    },
+    {
+        id: 'bal-endotracheal',
+        name: 'Bronchoalveolar Lavage (BAL)/ Endotracheal',
+        icon: '🫁',
+        minimumVolume: '4 ml',
+        collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
+    },
+    {
         id: 'swab',
-        name: 'Oropharyngeal / Nasopharyngeal Swab in Viral Transport Medium',
-        icon: 'icons/ET.svg',
+        name: 'Oropharyngeal / Nasopharyngeal Swab',
+        icon: '🦠',
         minimumVolume: '',
         collectionProcedure: 'Follow Manufacturer Recommendations',
         description: '<span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Follow Manufacturer Recommendations'
-    },
-    {
-        id: 'endotracheal',
-        name: 'Endotracheal Aspirate',
-        icon: 'icons/Swab.svg',
-        minimumVolume: '2 ml',
-        collectionProcedure: 'Collected with strict aseptic techniques in a sterile container',
-        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Collected with strict aseptic techniques in a sterile container'
     }
 ];
 
@@ -75,7 +67,7 @@ function displaySampleTypes() {
         
         sampleCard.innerHTML = `
             <div class="sample-header ${isExpanded ? 'expanded' : ''}" data-sample-id="${sampleType.id}">
-                <div class="sample-icon"><img src="${sampleType.icon}" alt="${sampleType.name}" /></div>
+                <div class="sample-icon">${sampleType.icon}</div>
                 <h3 class="sample-name">${sampleType.name}</h3>
                 <div class="expand-icon ${isExpanded ? 'rotated' : ''}">▼</div>
             </div>

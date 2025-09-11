@@ -186,25 +186,24 @@ header p {
 /* Welcome page styles */
 .welcome-header {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 20px 0;
+    margin-bottom: 30px;
+    padding: 10px 0;
 }
 
 .welcome-title {
     color: white;
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 2.8em;
+    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .brand-container {
-    margin: 30px 0;
-    padding: 25px;
-    background: rgba(255, 255, 255, 0.9);
+    margin: 10px 0 0 0;
+    padding: 10px 0;
+    background: transparent;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .brand-logo {
@@ -212,6 +211,14 @@ header p {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+}
+
+.logo-svg {
+    max-width: 650px;
+    max-height: 980px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .brand-name {
@@ -435,11 +442,13 @@ label {
 .pdf-header h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 .pdf-subtitle {
     opacity: 0.9;
     font-size: 1.1em;
+    font-style: italic;
 }
 
 .pdf-header-buttons {
@@ -567,6 +576,15 @@ label {
 .form-container {
     padding: 40px;
     text-align: center;
+}
+
+/* Home page CTA: remove white background block behind the button */
+.home-cta {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-top: 10px;
 }
 
 /* Ultra Compact Form Styles */
@@ -746,12 +764,6 @@ label {
     border-radius: 50%;
 }
 
-.sample-icon img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-
 .sample-name {
     flex: 1;
     margin: 0;
@@ -820,8 +832,8 @@ label {
 }
 
 .case-study-card-new {
-    border-radius: 20px;
-    padding: 8px;
+    border-radius: 25px;
+    padding: 12px;
     background: white;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -829,6 +841,7 @@ label {
     position: relative;
     overflow: hidden;
     min-height: 200px;
+    border: 3px solid white;
 }
 
 .case-study-card-new:hover {
@@ -838,25 +851,25 @@ label {
 
 .case-study-background {
     position: absolute;
-    top: 8px;
-    left: 8px;
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
+    top: 12px;
+    left: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .case-study-overlay {
     position: absolute;
-    top: 8px;
-    left: 8px;
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.75) 100%);
+    top: 12px;
+    left: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.4) 100%);
     z-index: 1;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .case-study-content-wrapper {
@@ -871,17 +884,17 @@ label {
 }
 
 .case-study-number {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     color: #333;
-    padding: 6px 12px;
-    border-radius: 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
     font-weight: bold;
-    font-size: 11px;
+    font-size: 12px;
     align-self: flex-start;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .case-study-title {
@@ -891,6 +904,7 @@ label {
     font-weight: 600;
     line-height: 1.3;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: italic;
 }
 
 .case-study-description {
@@ -1113,16 +1127,29 @@ label {
 
 /* Tablet-specific responsive design (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
     .container {
         max-width: 700px;
         padding: 20px;
-        margin-top: 85px;
+        margin: 0 auto;
+    }
+    
+    /* Reset header margins for centered layout */
+    .welcome-header {
+        margin-bottom: 20px;
+        padding: 0;
     }
     
     /* Better spacing for tablet headers */
     .sample-types-header {
-        margin-top: 60px;
-        padding-top: 15px;
+        margin-top: 0;
+        padding-top: 0;
         margin-bottom: 30px;
     }
     
@@ -1188,7 +1215,6 @@ label {
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
         padding: 0 10px;
-        margin-top: 40px;
     }
     
     .case-study-card-new {
@@ -1228,5 +1254,65 @@ label {
     
     .pdf-content {
         padding: 20px;
+    }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Mobile-specific responsive design (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        margin: 10px 0;
+    }
+}
+
+/* Tablet-specific responsive design (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        display: block; /* reset flex so layout works normally */
+    }
+
+    .container {
+        max-width: 700px;
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;  /* vertically center */
+        flex-direction: column;
+    }
+
+    header,
+    .welcome-header {
+        margin: 0 auto 20px auto;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* Desktop-specific responsive design (769px and above) */
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
     }
 }

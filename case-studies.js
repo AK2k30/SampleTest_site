@@ -3,254 +3,229 @@ const caseStudyData = {
     blood: [
         {
             id: 1,
-            title: "Sepsis Detection in Emergency Care",
+            title: "Rickettsia typhi",
             description: "Critical blood culture analysis revealed multi-drug resistant Staphylococcus aureus in a 67-year-old patient with fever and confusion",
             category: "Emergency Medicine",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/NEONATAL_SEPTICAEMIA_cyuyf6.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/NEONATAL_SEPTICAEMIA_cyuyf6.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566453/INFEXN_-_DR.SUJEESH_-_CASE_STIDY_-_EMAILER_V2_compressed_mvnbhe.pdf"
         },
         {
             id: 2,
-            title: "Anemia Investigation",
+            title: "Rickettsia slovaca",
             description: "Complete blood count revealed severe iron-deficiency anemia in a 45-year-old woman with chronic fatigue and pale complexion",
             category: "Hematology",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516765/DR.SUJEESH_k6dxru.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516765/DR.SUJEESH_k6dxru.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757576171/INFEXN_-_DR.GANESH_-pdf_compressed_c9irnu.pdf"
         },
         {
             id: 3,
-            title: "Leukemia Screening",
+            title: "Roseomonas mucosa",
             description: "Abnormal white blood cell count led to bone marrow biopsy confirming acute lymphoblastic leukemia in pediatric patient",
             category: "Oncology",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/raw/upload/v1757584484/mlu1odcd2ooemyhro22f.pdf"
         },
         {
             id: 4,
-            title: "Diabetes Monitoring",
+            title: "Actinomadura pelletieri",
             description: "HbA1c blood test showed excellent glucose control in type 2 diabetic patient following lifestyle modifications",
             category: "Endocrinology",
             severity: "Normal",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516764/DR_JAYESH_N_DESAI_yfecky.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516764/DR_JAYESH_N_DESAI_yfecky.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566453/INFEXN_-_MYCETOMA_compressed_j06et0.pdf"
         },
         {
             id: 5,
-            title: "Cardiac Enzyme Assessment",
+            title: "Enterococcus faecium",
             description: "Elevated troponin levels confirmed myocardial infarction in 58-year-old male with chest pain and shortness of breath",
             category: "Cardiology",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg"
-        }
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566455/INFEXN_-NEONATAL_SEPTICAEMIA_compressed_ozj3in.pdf"
+        },
+        {
+            id: 6,
+            title: "Orientia tsutsugamushi",
+            description: "Elevated troponin levels confirmed myocardial infarction in 58-year-old male with chest pain and shortness of breath",
+            category: "Cardiology",
+            severity: "Critical",
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566455/INFEXN_-NEONATAL_SEPTICAEMIA_compressed_ozj3in.pdf"
+        },
+        {
+            id: 7,
+            title: "Klebsiella pnemoniae, Candida albican and more....",
+            description: "Elevated troponin levels confirmed myocardial infarction in 58-year-old male with chest pain and shortness of breath",
+            category: "Cardiology",
+            severity: "Critical",
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757577021/INFEXN_-_CASE_STUDY_-_DR.AMIT_BOTKONDLE_iuzswi.pdf"
+        },
+        {
+            id: 8,
+            title: "Herpes simplex virus 1, Acinetobacter baumannii",
+            description: "Elevated troponin levels confirmed myocardial infarction in 58-year-old male with chest pain and shortness of breath",
+            category: "Cardiology",
+            severity: "Critical",
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf"
+        },
+        {
+            id: 9,
+            title: "Influenza A H3N2",
+            description: "Elevated troponin levels confirmed myocardial infarction in 58-year-old male with chest pain and shortness of breath",
+            category: "Cardiology",
+            severity: "Critical",
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757576683/INFEXN_-_CASE_STUDY_-_DR.MAHESH_n9oyib.pdf"
+        },
     ],
     'sterile-fluids': [
         {
             id: 1,
-            title: "Peritonitis Diagnosis",
+            title: "Parvimonas micra",
             description: "Peritoneal fluid analysis revealed bacterial peritonitis in dialysis patient with abdominal pain and fever",
             category: "Nephrology",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/SCRUB_TYPHUS_kmjde9.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/SCRUB_TYPHUS_kmjde9.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566452/INFEXN_-_DR._SUMEET_-_CASE_STUDY_-_EMAILER_REMOVE_BUTTON_compressed_jg2u85.pdf"
         },
         {
             id: 2,
-            title: "Pleural Effusion Analysis",
+            title: "Burkholderia pseudomallei",
             description: "Thoracentesis fluid examination identified malignant cells indicating metastatic lung cancer in 72-year-old smoker",
             category: "Pulmonology",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516764/DR.PRADEEP_bphj7b.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516764/DR.PRADEEP_bphj7b.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757585015/Case_Study_6_m52uxt.pdf"
         },
         {
             id: 3,
-            title: "Synovial Fluid Investigation",
+            title: "Actinomadura pelletieri",
             description: "Joint fluid analysis confirmed septic arthritis with Streptococcus pneumoniae in immunocompromised patient",
             category: "Rheumatology",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/MYCETOMA_b2huxk.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/MYCETOMA_b2huxk.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566453/INFEXN_-_MYCETOMA_compressed_j06et0.pdf"
         },
         {
             id: 4,
-            title: "Ascites Evaluation",
+            title: "Streptococcus pneumoniae",
             description: "Abdominal fluid analysis ruled out spontaneous bacterial peritonitis in cirrhotic patient with ascites",
             category: "Gastroenterology",
             severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516762/DR.MAHAESH_orydme.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516762/DR.MAHAESH_orydme.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757579104/INFEXN_-_CASE_STUDY_-_ESKAPE_INFECTIONS_compressed_vfsxqk.pdf"
         },
         {
             id: 5,
-            title: "Pericardial Fluid Study",
+            title: "Klebsiella pnemoniae, Candida albican and more....",
             description: "Pericardiocentesis revealed inflammatory pericarditis with no evidence of malignancy in cardiac tamponade case",
             category: "Cardiology",
             severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516763/DR_AMOL-_Roseomonas_mucosa_p4pxxe.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516763/DR_AMOL-_Roseomonas_mucosa_p4pxxe.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757577021/INFEXN_-_CASE_STUDY_-_DR.AMIT_BOTKONDLE_iuzswi.pdf"
         }
     ],
     urine: [
         {
             id: 1,
-            title: "Kidney Stone Prevention",
+            title: "E. coli, E. faecalis ",
             description: "24-hour urine collection revealed elevated calcium oxalate levels, leading to dietary modifications and successful stone prevention",
             category: "Urology",
             severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516762/DR.KIRAN_RAJAGOPAL_xggw12.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516762/DR.KIRAN_RAJAGOPAL_xggw12.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566452/INFEXN_-_DR_JAYESH_N_DESAI_-_CASE_STUDY_-_EMAILER_compressed_e4vnww.pdf"
         },
         {
             id: 2,
-            title: "UTI in Elderly Patient",
+            title: "Klebsiella pnemoniae(blood), Candida albican and more....",
             description: "Urine culture identified E. coli with antibiotic resistance, requiring targeted therapy in 82-year-old woman",
             category: "Geriatrics",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516761/DR_ouohcu.png"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516761/DR_ouohcu.png",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757577021/INFEXN_-_CASE_STUDY_-_DR.AMIT_BOTKONDLE_iuzswi.pdf"
         },
         {
             id: 3,
-            title: "Proteinuria Investigation",
+            title: "Herpes simplex virus 1, Acinetobacter baumannii",
             description: "Persistent protein in urine led to kidney biopsy confirming focal segmental glomerulosclerosis in young adult",
             category: "Nephrology",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516761/DR.GANESH_ovicd5.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516761/DR.GANESH_ovicd5.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf"
         },
-        {
-            id: 4,
-            title: "Pregnancy Monitoring",
-            description: "Routine urinalysis detected preeclampsia markers, enabling early intervention and successful pregnancy outcome",
-            category: "Obstetrics",
-            severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/NEONATAL_SEPTICAEMIA_cyuyf6.jpg"
-        },
-        {
-            id: 5,
-            title: "Drug Screening Case",
-            description: "Workplace accident investigation revealed presence of controlled substances, leading to appropriate treatment referral",
-            category: "Occupational Health",
-            severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/SCRUB_TYPHUS_kmjde9.jpg"
-        }
     ],
-    bal: [
+    'bal-endotracheal': [
         {
             id: 1,
-            title: "Pneumocystis Pneumonia Detection",
+            title: "Influenza, Klebsiella pneumoniae",
             description: "BAL fluid analysis confirmed PCP infection in HIV-positive patient with respiratory failure and hypoxemia",
             category: "Infectious Disease",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566453/INFEXN_-_DR.SHAMIM_AKHTAR_-_CASE_STUDY_EMAILER_REMOVE_BUTTON_compressed_cmt1jg.pdf"
         },
         {
             id: 2,
-            title: "Pulmonary Alveolar Proteinosis",
+            title: "Klebsiella pneumoniae",
             description: "BAL showed characteristic milky appearance and PAS-positive material confirming rare lung disorder diagnosis",
             category: "Pulmonology",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757519716/DR.SHAMIM_AKHTAR_1_ybfd7j.jpg"
+            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757579104/INFEXN_-_CASE_STUDY_-_ESKAPE_INFECTIONS_compressed_vfsxqk.pdf"
         },
         {
             id: 3,
-            title: "Lung Cancer Staging",
+            title: "Staphylococcus haemolyticus",
             description: "BAL cytology revealed adenocarcinoma cells, providing crucial staging information for treatment planning",
             category: "Oncology",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757519716/DR._SUMEET_1_ociaqv.jpg"
+            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/raw/upload/v1757584484/mlu1odcd2ooemyhro22f.pdf"
         },
         {
             id: 4,
-            title: "Hypersensitivity Pneumonitis",
+            title: "Herpes simplex virus 1, Acinetobacter baumannii",
             description: "BAL cell differential showed increased lymphocytes confirming occupational lung disease in factory worker",
             category: "Occupational Medicine",
             severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf"
         },
-        {
-            id: 5,
-            title: "Ventilator-Associated Pneumonia",
-            description: "BAL culture identified multi-drug resistant Pseudomonas in ICU patient requiring targeted antimicrobial therapy",
-            category: "Critical Care",
-            severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        }
     ],
     csf: [
         {
             id: 1,
-            title: "Bacterial Meningitis Emergency",
+            title: "Cutibacterium acnes",
             description: "CSF analysis revealed elevated white cells and low glucose, confirming Streptococcus pneumoniae meningitis in pediatric patient",
             category: "Emergency Neurology",
             severity: "Critical",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/raw/upload/v1757583751/i9fvynw1ejyugmkmedxa.pdf"
         },
         {
             id: 2,
-            title: "Multiple Sclerosis Diagnosis",
+            title: "Mycobacterium tuberculosis, Stenotrophomonas maltophilia ",
             description: "CSF showed oligoclonal bands and elevated IgG index supporting MS diagnosis in 28-year-old with neurological symptoms",
             category: "Neurology",
             severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.NIKHIL_RATHOD_rs8sac.pdf"
         },
-        {
-            id: 3,
-            title: "Subarachnoid Hemorrhage",
-            description: "Lumbar puncture revealed xanthochromia and elevated red blood cells confirming SAH despite negative CT scan",
-            category: "Neurosurgery",
-            severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-            id: 4,
-            title: "Viral Encephalitis Investigation",
-            description: "CSF PCR testing identified HSV-1 encephalitis in young adult with altered mental status and seizures",
-            category: "Infectious Neurology",
-            severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-            id: 5,
-            title: "Normal Pressure Hydrocephalus",
-            description: "CSF drainage trial showed significant improvement in gait and cognition, confirming NPH diagnosis in elderly patient",
-            category: "Geriatric Neurology",
-            severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        }
     ],
     swab: [
         {
             id: 1,
-            title: "COVID-19 Outbreak Investigation",
+            title: "Crenalium Epipsammum, Klebsiella pneumoniae (XDR)",
             description: "Nasopharyngeal swab PCR testing identified SARS-CoV-2 variants during workplace outbreak, enabling contact tracing",
             category: "Public Health",
             severity: "High",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/MYCETOMA_b2huxk.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/MYCETOMA_b2huxk.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757582148/INFEXN_-_CASE_STUDY_-_CRENALIUM_EPIPSAMMUM_compressed_pxb1yx.pdf"
         },
-        {
-            id: 2,
-            title: "Influenza A Detection",
-            description: "Rapid viral testing confirmed H3N2 influenza strain in elderly nursing home resident during seasonal outbreak",
-            category: "Geriatrics",
-            severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-            id: 3,
-            title: "RSV in Pediatric Patient",
-            description: "Throat swab identified respiratory syncytial virus in 6-month-old infant with bronchiolitis and breathing difficulties",
-            category: "Pediatrics",
-            severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1582560469781-1960832d2c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-            id: 4,
-            title: "Strep Throat Diagnosis",
-            description: "Oropharyngeal swab culture confirmed Group A Streptococcus infection in school-age child with sore throat",
-            category: "Family Medicine",
-            severity: "Moderate",
-            backgroundImage: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        },
-        {
-            id: 5,
-            title: "Pertussis Outbreak Control",
-            description: "PCR testing of nasopharyngeal swabs identified Bordetella pertussis in several family members during whooping cough outbreak",
-            category: "Infectious Disease",
-            severity: "High",
-            backgroundImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-        }
     ],
     aspirate: [
         {
@@ -259,7 +234,8 @@ const caseStudyData = {
             description: "Serial endotracheal aspirates showed successful clearance of Acinetobacter baumannii following targeted antibiotic therapy",
             category: "Critical Care",
             severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516765/DR.SUJEESH_k6dxru.jpg"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516765/DR.SUJEESH_k6dxru.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf"
         },
         {
             id: 2,
@@ -267,7 +243,8 @@ const caseStudyData = {
             description: "ET aspirate revealed carbapenem-resistant Klebsiella pneumoniae requiring combination antimicrobial therapy",
             category: "Infectious Disease",
             severity: "Critical",
-            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+            backgroundImage: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.NIKHIL_RATHOD_rs8sac.pdf"
         },
         {
             id: 3,
