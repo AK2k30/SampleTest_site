@@ -114,11 +114,11 @@ const caseStudyData = {
         {
             id: 4,
             title: "Streptococcus pneumoniae",
-            description: "A real-world case of identifying hidden pathogens and resistance genes in an elderly patient",
+            description: "A real-world pediatric case study of identifying a rare respiratory pathogen in an infant within 24 hours.",
             category: "Gastroenterology",
             severity: "Moderate",
-            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516766/ESKAPE_INFECTIONS_uhnh9b.jpg",
-            pdfUrl: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757579104/INFEXN_-_CASE_STUDY_-_ESKAPE_INFECTIONS_compressed_vfsxqk.pdf"
+            backgroundImage: "https://res.cloudinary.com/dirdm86ij/image/upload/v1757516767/EMPYEMA_THORACIS_qt14ym.jpg",
+            pdfUrl: "https://res.cloudinary.com/dirdm86ij/raw/upload/v1757612039/oet7t6kjcktqmuhu19lt.pdf"
         },
         {
             id: 5,
