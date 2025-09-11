@@ -458,9 +458,20 @@ function displayCaseStudies(test) {
         
         // Add click event to show PDF details
         caseStudyCard.addEventListener('click', function() {
-            // Store both test and case study data for PDF viewer
-            localStorage.setItem('selectedCaseStudy', JSON.stringify(caseStudy));
-            window.location.href = 'pdf-viewer.html';
+            // Detect Safari browser
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const isSafariMobile = isIOSDevice && isSafari;
+            
+            if (isSafari || isSafariMobile) {
+                // For Safari (desktop and mobile), open PDF directly in new tab
+                const pdfUrl = caseStudy.pdfUrl || 'https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf';
+                window.open(pdfUrl, '_blank');
+            } else {
+                // For other browsers, use the PDF viewer page
+                localStorage.setItem('selectedCaseStudy', JSON.stringify(caseStudy));
+                window.location.href = 'pdf-viewer.html';
+            }
         });
         
         caseStudiesContainer.appendChild(caseStudyCard);
