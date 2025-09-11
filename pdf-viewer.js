@@ -1,3 +1,7 @@
+// NOTE: This PDF viewer is no longer used as PDFs now open directly in the browser
+// The case-studies.js has been updated to use window.open() for all PDF links
+// This file is kept for reference but is not actively used
+
 document.addEventListener('DOMContentLoaded', function() {
     const selectedCaseStudy = JSON.parse(localStorage.getItem('selectedCaseStudy'));
     const pdfTestName = document.getElementById('pdf-test-name');

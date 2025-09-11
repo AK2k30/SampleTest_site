@@ -456,22 +456,11 @@ function displayCaseStudies(test) {
             </div>
         `;
         
-        // Add click event to show PDF details
+        // Add click event to open PDF directly in browser
         caseStudyCard.addEventListener('click', function() {
-            // Detect Safari browser
-            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-            const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            const isSafariMobile = isIOSDevice && isSafari;
-            
-            if (isSafari || isSafariMobile) {
-                // For Safari (desktop and mobile), open PDF directly in new tab
-                const pdfUrl = caseStudy.pdfUrl || 'https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf';
-                window.open(pdfUrl, '_blank');
-            } else {
-                // For other browsers, use the PDF viewer page
-                localStorage.setItem('selectedCaseStudy', JSON.stringify(caseStudy));
-                window.location.href = 'pdf-viewer.html';
-            }
+            // Open PDF directly in new tab for all browsers
+            const pdfUrl = caseStudy.pdfUrl || 'https://res.cloudinary.com/dirdm86ij/image/upload/v1757566076/INFEXN_-_DR.PRADEEP_yn8c5s.pdf';
+            window.open(pdfUrl, '_blank');
         });
         
         caseStudiesContainer.appendChild(caseStudyCard);
