@@ -6,7 +6,7 @@ const sampleTypesData = [
         icon: '🩸',
         minimumVolume: '6 - 8 ml',
         collectionProcedure: 'Whole blood in sterile EDTA vacutainers',
-        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 2 - 4 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Whole blood in sterile EDTA vacutainers'
+        description: '<span style="font-weight: bold; font-size: 1.1em;">Minimum Volume Required:</span> 6 - 8 ml<br><span style="font-weight: bold; font-size: 1.1em;">Collection Procedure:</span> Whole blood in sterile EDTA vacutainers'
     },
     {
         id: 'sterile-fluids',
